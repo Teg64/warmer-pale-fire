@@ -2,7 +2,7 @@
   "name": "warmer-pale-fire",
   "displayName": "Warmer Pale Fire",
   "description": "A slightly warmer version of @matklad's Pale Fire Vs Code theme ",
-  "icon": "./icon.png",
+  "icon": "images/icon.png",
   "publisher": "Teg64",
   "repository": {
     "url": "https://github.com/Teg64/warmer-pale-fire"

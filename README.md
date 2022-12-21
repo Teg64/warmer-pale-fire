@@ -1,25 +1,23 @@
 # Warmer Pale Fire
 
-Test
+A modified version of matklad's [Pale Fire](https://github.com/matklad/pale-fire) Vs Code theme, originally based on [emacs-zenburn](https://github.com/bbatsov/zenburn-emacs).
 
-<!-- Regular:
+Regular:
 
-![](./default.png)
+![Default](images/default_sample.png)
 
 High Contrast:
 
-![](./hc.png)
+![High Contrast](images/high_contrast_sample.png)
 
 Darker:
 
-![](./darker.png)
+![Darker](images/darker_sample.png)
 
 Stealth:
 
-![](./stealth.png)
-
-A color theme for VS Code based on [emacs-zenburn](https://github.com/bbatsov/zenburn-emacs).
+![Stealth](images/stealth_sample.png)
 
 ## License
 
-GPL3, like emacs-zenburn. -->
+Licensed under GPL3, as with [Pale Fire](https://github.com/matklad/pale-fire) and [emacs-zenburn](https://github.com/bbatsov/zenburn-emacs).
