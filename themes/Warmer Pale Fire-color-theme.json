@@ -1,10 +1,9 @@
 // Do not edit directly; this file is generated.
 {
-    "name": "Pale Fire",
+    "name": "Warmer Pale Fire",
     "tokenColors": [
         {
             "scope": [
-                "entity.name.tag",
                 "keyword.operator.expression",
                 "keyword.operator.new",
                 "keyword.operator.wordlike",
@@ -29,14 +28,25 @@
                 "storage.type.rust",
                 "storage.type.struct",
                 "storage.type.ts",
+                "storage.type.tsx",
                 "storage.type.type",
                 "variable.language.self",
                 "variable.language.special.self",
                 "variable.language.this"
             ],
             "settings": {
-                "foreground": "#EADFAF",
+                "foreground": "#D2657E",
                 "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": [
+                "constant.language.bool",
+                "constant.language.boolean"
+            ],
+            "settings": {
+                "foreground": "#D2657E",
+                "fontStyle": ""
             }
         },
         {
@@ -107,7 +117,8 @@
                 "support.type"
             ],
             "settings": {
-                "foreground": "#7CBBBE"
+                "foreground": "#9781C2",
+                "fontStyle": "bold"
             }
         },
         {
@@ -152,7 +163,8 @@
                 "variable.other.property"
             ],
             "settings": {
-                "foreground": "#DFB497"
+                "foreground": "#EAEAD3",
+                "fontStyle": ""
             }
         },
         {
@@ -186,7 +198,8 @@
                 "entity.name.macro",
                 "entity.name.other.preprocessor.macro",
                 "variable.other.readwrite.module.elixir",
-                "punctuation.definition.variable.elixir"
+                "punctuation.definition.variable.elixir",
+                "entity.name.tag"
             ],
             "settings": {
                 "foreground": "#9AC3E4"
@@ -475,16 +488,18 @@
     "semanticHighlighting": true,
     "semanticTokenColors": {
         "keyword": {
-            "foreground": "#EADFAF",
-            "bold": true
-        },
-        "boolean": {
-            "foreground": "#EADFAF",
+            "foreground": "#D2657E",
             "bold": true
         },
         "selfParameter": {
-            "foreground": "#EADFAF",
+            "foreground": "#D2657E",
             "bold": true
+        },
+        "boolean": {
+            "foreground": "#D2657E",
+            "bold": false,
+            "italic": false,
+            "underline": false
         },
         "number": {
             "foreground": "#B4D9B4"
@@ -517,22 +532,28 @@
             "foreground": "#D4C5F2"
         },
         "type": {
-            "foreground": "#7CBBBE"
+            "foreground": "#9781C2",
+            "bold": true
         },
         "class": {
-            "foreground": "#7CBBBE"
+            "foreground": "#9781C2",
+            "bold": true
         },
         "struct": {
-            "foreground": "#7CBBBE"
-        },
-        "enum": {
-            "foreground": "#7CBBBE"
+            "foreground": "#9781C2",
+            "bold": true
         },
         "union": {
-            "foreground": "#7CBBBE"
+            "foreground": "#9781C2",
+            "bold": true
         },
         "typeAlias": {
-            "foreground": "#7CBBBE"
+            "foreground": "#9781C2",
+            "bold": true
+        },
+        "enum": {
+            "foreground": "#7CBBBE",
+            "bold": true
         },
         "type.public.declaration": {
             "foreground": "#B4A5D1"
@@ -558,12 +579,9 @@
         "typeParameter": {
             "foreground": "#F0C3A6"
         },
-        "property": {
-            "foreground": "#DFB497"
-        },
         "interface": {
-            "foreground": "#8CCBCE",
-            "italic": true
+            "foreground": "#9781C2",
+            "bold": true
         },
         "interface.public.declaration": {
             "foreground": "#C4B5E2"
@@ -621,7 +639,7 @@
             "foreground": "#D4C5F2"
         },
         "unresolvedReference": {
-            "foreground": "#D49E9E",
+            "foreground": "#9CDBDE",
             "underline": true
         },
         "magit-ref-name": {
@@ -633,16 +651,18 @@
             "bold": true
         },
         "keyword.injected": {
-            "foreground": "#EADFAFAA",
-            "bold": true
-        },
-        "boolean.injected": {
-            "foreground": "#EADFAFAA",
+            "foreground": "#D2657EAA",
             "bold": true
         },
         "selfParameter.injected": {
-            "foreground": "#EADFAFAA",
+            "foreground": "#D2657EAA",
             "bold": true
+        },
+        "boolean.injected": {
+            "foreground": "#D2657EAA",
+            "bold": false,
+            "italic": false,
+            "underline": false
         },
         "number.injected": {
             "foreground": "#B4D9B4AA"
@@ -675,22 +695,28 @@
             "foreground": "#D4C5F2AA"
         },
         "type.injected": {
-            "foreground": "#7CBBBEAA"
+            "foreground": "#9781C2AA",
+            "bold": true
         },
         "class.injected": {
-            "foreground": "#7CBBBEAA"
+            "foreground": "#9781C2AA",
+            "bold": true
         },
         "struct.injected": {
-            "foreground": "#7CBBBEAA"
-        },
-        "enum.injected": {
-            "foreground": "#7CBBBEAA"
+            "foreground": "#9781C2AA",
+            "bold": true
         },
         "union.injected": {
-            "foreground": "#7CBBBEAA"
+            "foreground": "#9781C2AA",
+            "bold": true
         },
         "typeAlias.injected": {
-            "foreground": "#7CBBBEAA"
+            "foreground": "#9781C2AA",
+            "bold": true
+        },
+        "enum.injected": {
+            "foreground": "#7CBBBEAA",
+            "bold": true
         },
         "type.public.declaration.injected": {
             "foreground": "#B4A5D1AA"
@@ -716,12 +742,9 @@
         "typeParameter.injected": {
             "foreground": "#F0C3A6AA"
         },
-        "property.injected": {
-            "foreground": "#DFB497AA"
-        },
         "interface.injected": {
-            "foreground": "#8CCBCEAA",
-            "italic": true
+            "foreground": "#9781C2AA",
+            "bold": true
         },
         "interface.public.declaration.injected": {
             "foreground": "#C4B5E2AA"
@@ -781,7 +804,7 @@
             "foreground": "#D4C5F2AA"
         },
         "unresolvedReference.injected": {
-            "foreground": "#D49E9EAA",
+            "foreground": "#9CDBDEAA",
             "underline": true
         },
         "magit-ref-name.injected": {
@@ -830,7 +853,7 @@
         "editor.wordHighlightBackground": "#636363",
         "editor.wordHighlightStrongBackground": "#636363",
         "editorCursor.foreground": "#FEFEE7",
-        "editorError.foreground": "#E4AEAD",
+        "editorError.foreground": "#F14C4C",
         "editorGroup.dropBackground": "#9AC3E422",
         "editorGroupHeader.noTabsBackground": "#484848",
         "editorGroupHeader.tabsBackground": "#2E2E2E",
@@ -917,15 +940,15 @@
         "statusBar.noFolderBackground": "#2E2E2E",
         "statusBar.foreground": "#95B995",
         "statusBar.debuggingForeground": "#CFA488",
-        "symbolIcon.keywordForeground": "#EADFAF",
+        "symbolIcon.keywordForeground": "#D2657E",
         "symbolIcon.variableForeground": "#E0E0C9",
         "symbolIcon.functionForeground": "#9CDBDE",
         "symbolIcon.methodForeground": "#9CDBDE",
-        "symbolIcon.classForeground": "#7CBBBE",
-        "symbolIcon.structForeground": "#7CBBBE",
-        "symbolIcon.enumeratorForeground": "#7CBBBE",
-        "symbolIcon.typeParameterForeground": "#7CBBBE",
-        "symbolIcon.interfaceForeground": "#8CCBCE",
+        "symbolIcon.classForeground": "#9781C2",
+        "symbolIcon.structForeground": "#9781C2",
+        "symbolIcon.enumeratorForeground": "#9781C2",
+        "symbolIcon.typeParameterForeground": "#9781C2",
+        "symbolIcon.interfaceForeground": "#9781C2",
         "symbolIcon.constantForeground": "#C5E2FA",
         "symbolIcon.enumeratorMemberForeground": "#C5E2FA",
         "symbolIcon.fieldForeground": "#DFB497",

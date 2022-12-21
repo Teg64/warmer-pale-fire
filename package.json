@@ -1,13 +1,13 @@
 {
-  "name": "pale-fire",
-  "displayName": "Pale Fire",
-  "description": "Emacs-inspired zenburn variation",
-  "icon": "icon.png",
-  "publisher": "matklad",
+  "name": "warmer-pale-fire",
+  "displayName": "Warmer Pale Fire",
+  "description": "A slightly warmer version of @matklad's Pale Fire Vs Code theme ",
+  "icon": "./icon.png",
+  "publisher": "Teg64",
   "repository": {
-    "url": "https://github.com/matklad/pale-fire"
+    "url": "https://github.com/Teg64/warmer-pale-fire"
   },
-  "version": "0.4.27",
+  "version": "0.5.0",
   "engines": {
     "vscode": "^1.41.0"
   },
@@ -23,24 +23,24 @@
   "contributes": {
     "themes": [
       {
-        "label": "Pale Fire",
+        "label": "Warmer Pale Fire",
         "uiTheme": "vs-dark",
-        "path": "./themes/Pale Fire-color-theme.json"
+        "path": "./themes/Warmer Pale Fire-color-theme.json"
       },
       {
-        "label": "Pale Fire High Contrast",
+        "label": "Warmer Pale Fire [High Contrast]",
         "uiTheme": "vs-dark",
-        "path": "./themes/Pale Fire High Contrast-color-theme.json"
+        "path": "./themes/Warmer Pale Fire High Contrast-color-theme.json"
       },
       {
-        "label": "Pale Fire Darker",
+        "label": "Warmer Pale Fire [Darker]",
         "uiTheme": "vs-dark",
-        "path": "./themes/Pale Fire Darker-color-theme.json"
+        "path": "./themes/Warmer Pale Fire Darker-color-theme.json"
       },
       {
-        "label": "Pale Fire Stealth",
+        "label": "Warmer Pale Fire [Stealth]",
         "uiTheme": "vs-dark",
-        "path": "./themes/Pale Fire Stealth-color-theme.json"
+        "path": "./themes/Warmer Pale Fire Stealth-color-theme.json"
       }
     ]
   }

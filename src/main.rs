@@ -5,10 +5,10 @@ use mottle::dsl::ThemeBuilder;
 use palette::Palette;
 
 fn main() -> anyhow::Result<()> {
-    gen_and_save_theme("Pale Fire", Palette::ORIGINAL)?;
-    gen_and_save_theme("Pale Fire High Contrast", Palette::HIGH_CONTRAST)?;
-    gen_and_save_theme("Pale Fire Darker", Palette::DARKER)?;
-    gen_and_save_theme("Pale Fire Stealth", Palette::STEALTH)?;
+    gen_and_save_theme("Warmer Pale Fire", Palette::ORIGINAL)?;
+    gen_and_save_theme("Warmer Pale Fire High Contrast", Palette::HIGH_CONTRAST)?;
+    gen_and_save_theme("Warmer Pale Fire Darker", Palette::DARKER)?;
+    gen_and_save_theme("Warmer Pale Fire Stealth", Palette::STEALTH)?;
 
     Ok(())
 }

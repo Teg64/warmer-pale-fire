@@ -66,7 +66,7 @@ impl Palette {
     }
 
     pub(crate) fn keywords(&self) -> (u8, u8, u8) {
-        self.yellow(2)
+        self.keyword_rouge()
     }
 
     pub(crate) fn variables(&self) -> (u8, u8, u8) {
@@ -78,11 +78,11 @@ impl Palette {
     }
 
     pub(crate) fn types(&self) -> (u8, u8, u8) {
-        self.cyan(-1)
+        self.types_violet()
     }
 
     pub(crate) fn interfaces(&self) -> (u8, u8, u8) {
-        self.cyan(0)
+        self.types_violet()
     }
 
     pub(crate) fn constants(&self) -> (u8, u8, u8) {
@@ -161,6 +161,25 @@ impl Palette {
             if lightness.0 == 2 { self.color_chroma.min(0.045) } else { self.color_chroma };
 
         oklch(self.color_lightness(lightness), chroma, 243.0)
+    }
+}
+
+/// New colors added for Warmer Pale Fire
+impl Palette {
+    pub(crate) fn keyword_rouge(&self) -> (u8, u8, u8) {
+        (210, 101, 126)
+    }
+
+    pub(crate) fn types_violet(&self) -> (u8, u8, u8) {
+        (151, 129, 194)
+    }
+
+    pub(crate) fn error_red(&self) -> (u8, u8, u8) {
+        (241, 76, 76)
+    }
+
+    pub(crate) fn prop_yellow(&self) -> (u8, u8, u8) {
+        (234, 234, 211)
     }
 }
 

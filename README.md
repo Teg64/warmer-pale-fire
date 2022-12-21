@@ -1,6 +1,8 @@
-# Pale Fire
+# Warmer Pale Fire
 
-Regular:
+Test
+
+<!-- Regular:
 
 ![](./default.png)
 
@@ -20,4 +22,4 @@ A color theme for VS Code based on [emacs-zenburn](https://github.com/bbatsov/ze
 
 ## License
 
-GPL3, like emacs-zenburn.
+GPL3, like emacs-zenburn. -->

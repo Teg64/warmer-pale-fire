@@ -60,7 +60,7 @@ fn workspace_colors(t: &mut ThemeBuilder, p: &Palette) {
         p.greyscale(3),
     );
     t.w(["editorCursor.foreground"], p.bright_fg());
-    t.w(["editorError.foreground"], p.red(0));
+    t.w(["editorError.foreground"], p.error_red());
     t.w(["editorGroup.dropBackground"], (p.blue(0), 0x22));
     t.w(["editorGroupHeader.noTabsBackground"], p.greyscale(1));
     t.w(["editorGroupHeader.tabsBackground"], p.greyscale(-2));
@@ -210,9 +210,8 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
     t.a(
         [
             s("keyword"),
-            s("boolean"),
             s("selfParameter"),
-            tm("entity.name.tag"),
+            // tm("entity.name.tag"),
             tm("keyword.operator.expression"),
             tm("keyword.operator.new"),
             tm("keyword.operator.wordlike"),
@@ -235,14 +234,20 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
             tm("storage.type.namespace"),
             tm("storage.type.property"),
             tm("storage.type.rust"),
-            tm("storage.type.struct"),
+            tm("storage.type.struct"), // TODO: check this
             tm("storage.type.ts"),
+            tm("storage.type.tsx"),
             tm("storage.type.type"),
             tm("variable.language.self"),
             tm("variable.language.special.self"),
             tm("variable.language.this"),
         ],
         (p.keywords(), FontStyle::Bold),
+    );
+
+    t.a(
+        [s("boolean"), tm("constant.language.bool"), tm("constant.language.boolean")],
+        (p.keywords(), FontStyle::Clear),
     );
 
     t.a([s("number"), tm("constant.numeric"), tm("keyword.other.unit")], p.green(1));
@@ -294,7 +299,6 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
             s("type"),
             s("class"),
             s("struct"),
-            s("enum"),
             s("union"),
             s("typeAlias"),
             tm("entity.name.type"),
@@ -302,8 +306,9 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
             tm("support.class"),
             tm("support.type"),
         ],
-        p.types(),
+        (p.types(), FontStyle::Bold),
     );
+    t.a([s("enum")], (p.cyan(-1), FontStyle::Bold));
     t.a(
         [
             s("type.public.declaration"),
@@ -339,7 +344,7 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
 
     t.a(
         [
-            s("property"),
+            // s("property"),   // TODO: Test the effects of this
             tm("entity.name.field"),
             tm("entity.name.record.field"),
             tm("entity.name.variable.field"),
@@ -351,14 +356,14 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
             tm("variable.other.object.property"),
             tm("variable.other.property"),
         ],
-        p.properties(),
+        (p.prop_yellow(), FontStyle::Clear),
     );
     t.a(
         [tm("entity.name.tag.toml"), tm("entity.name.tag.yaml")],
         (p.properties(), FontStyle::Clear),
     );
 
-    t.a([s("interface")], (p.interfaces(), FontStyle::Italic));
+    t.a([s("interface")], (p.interfaces(), FontStyle::Bold));
     t.a([s("interface.public.declaration")], p.purple(0));
     t.a([s("*.trait")], FontStyle::Italic);
 
@@ -385,6 +390,7 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
             tm("entity.name.other.preprocessor.macro"),
             tm("variable.other.readwrite.module.elixir"),
             tm("punctuation.definition.variable.elixir"),
+            tm("entity.name.tag")
         ],
         p.blue(0),
     );
@@ -538,7 +544,7 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
     t.a([s("*.mutable"), tm("meta.mutable")], FontStyle::Underline);
     t.a([s("*.public.declaration")], p.purple(1));
 
-    t.a([s("unresolvedReference")], (p.red(-1), FontStyle::Underline));
+    t.a([s("unresolvedReference")], (p.functions(), FontStyle::Underline));
 
     t.a([s("magit-ref-name")], (p.cyan(1), FontStyle::Bold));
     t.a([s("magit-remote-ref-name")], (p.green(-2), FontStyle::Bold));
