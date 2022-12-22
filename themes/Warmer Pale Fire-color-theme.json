@@ -169,11 +169,29 @@
         },
         {
             "scope": [
+                "support.type.property-name.table",
+                "support.type.property-name.array"
+            ],
+            "settings": {
+                "foreground": "#9CDBDE",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": [
+                "constant.other.time"
+            ],
+            "settings": {
+                "foreground": "#D4C5F2"
+            }
+        },
+        {
+            "scope": [
                 "entity.name.tag.toml",
                 "entity.name.tag.yaml"
             ],
             "settings": {
-                "foreground": "#DFB497",
+                "foreground": "#D2657E",
                 "fontStyle": ""
             }
         },

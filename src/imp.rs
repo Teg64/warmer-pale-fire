@@ -358,9 +358,16 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
         ],
         (p.prop_yellow(), FontStyle::Clear),
     );
+
+    t.a(
+        [tm("support.type.property-name.table"), tm("support.type.property-name.array")],
+        (p.functions(), FontStyle::Clear),
+    );
+    t.a([tm("constant.other.time")], p.purple(1));
+
     t.a(
         [tm("entity.name.tag.toml"), tm("entity.name.tag.yaml")],
-        (p.properties(), FontStyle::Clear),
+        (p.keyword_rouge(), FontStyle::Clear),
     );
 
     t.a([s("interface")], (p.interfaces(), FontStyle::Bold));
@@ -390,7 +397,7 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
             tm("entity.name.other.preprocessor.macro"),
             tm("variable.other.readwrite.module.elixir"),
             tm("punctuation.definition.variable.elixir"),
-            tm("entity.name.tag")
+            tm("entity.name.tag"),
         ],
         p.blue(0),
     );
