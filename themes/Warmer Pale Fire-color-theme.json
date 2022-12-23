@@ -946,7 +946,7 @@
         "peekViewTitleLabel.foreground": "#FEFEE7",
         "progressBar.background": "#9AC3E4",
         "editorInlayHint.background": "#00000000",
-        "editorInlayHint.foreground": "#9E9E9E",
+        "editorInlayHint.foreground": "#6B6B6BF0",
         "scrollbar.shadow": "#00000088",
         "settings.headerForeground": "#FEFEE7",
         "settings.modifiedItemIndicator": "#9AC3E4",

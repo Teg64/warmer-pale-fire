@@ -8,6 +8,7 @@ pub(crate) struct Palette {
     base_color_lightness: f32,
     color_lightness_scale_multiplier: f32,
     color_chroma: f32,
+    inlay_hint_color: ((u8, u8, u8), u8),
 }
 
 impl Palette {
@@ -19,6 +20,7 @@ impl Palette {
         base_color_lightness: 0.8,
         color_lightness_scale_multiplier: 1.0,
         color_chroma: 0.064,
+        inlay_hint_color: ((107, 107, 107), 0xF0),
     };
 
     pub(crate) const HIGH_CONTRAST: Self = Self {
@@ -29,6 +31,7 @@ impl Palette {
         base_color_lightness: 0.8,
         color_lightness_scale_multiplier: 1.15,
         color_chroma: 0.078,
+        inlay_hint_color: ((94, 94, 94), 0xF0),
     };
 
     pub(crate) const DARKER: Self = Self {
@@ -39,6 +42,7 @@ impl Palette {
         base_color_lightness: 0.75,
         color_lightness_scale_multiplier: 1.05,
         color_chroma: 0.1,
+        inlay_hint_color: ((68, 68, 68), 0xF0),
     };
 
     pub(crate) const STEALTH: Self = Self {
@@ -49,12 +53,18 @@ impl Palette {
         base_color_lightness: 0.75,
         color_lightness_scale_multiplier: 0.8,
         color_chroma: 0.064,
+        inlay_hint_color: ((81, 81, 81), 0xF0),
     };
 
     const FG_HUE: f32 = 107.0;
 
     pub(crate) fn fg(&self) -> (u8, u8, u8) {
         oklch(self.base_foreground_lightness, self.foreground_chroma, Self::FG_HUE)
+    }
+
+    // Added new editorInlayHint.foreground specifier
+    pub(crate) fn inlay_hint_color(&self) -> ((u8, u8, u8), u8) {
+        self.inlay_hint_color
     }
 
     pub(crate) fn bright_fg(&self) -> (u8, u8, u8) {

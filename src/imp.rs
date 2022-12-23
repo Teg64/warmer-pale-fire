@@ -142,7 +142,7 @@ fn workspace_colors(t: &mut ThemeBuilder, p: &Palette) {
     t.w(["peekViewTitleLabel.foreground"], p.bright_fg());
     t.w(["progressBar.background"], p.blue(0));
     t.w(["editorInlayHint.background"], (0x000000, 0x00));
-    t.w(["editorInlayHint.foreground"], p.greyscale(5));
+    t.w(["editorInlayHint.foreground"], p.inlay_hint_color());
     t.w(["scrollbar.shadow"], (0x000000, 0x88));
     t.w(["settings.headerForeground"], p.bright_fg());
     t.w(["settings.modifiedItemIndicator"], p.blue(0));
