@@ -1,8 +1,8 @@
 [package]
-authors = ["Aleksey Kladov <aleksey.kladov@gmail.com>"]
+authors = ["Aleksey Kladov <aleksey.kladov@gmail.com>", "Teigan Rosen"]
 edition = "2018"
-name = "pale-fire"
-version = "0.1.0"
+name = "warmer-pale-fire"
+version = "0.2.0"
 
 [dependencies]
 anyhow = "1.0"
