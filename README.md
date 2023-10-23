@@ -32,10 +32,12 @@ Installation guide:
 1. Clone this repository
 2. In the project root directory \[`~/.../warmer-pale-fire`\], run `cargo run` in the terminal
    - This should generate a `themes` folder in the project root directory, containing json files specifying the Vs Code themes
-3. Run `npm run package` in the terminal
+3. Run `npm install` in the terminal (if you haven't done so already)
+   - This should only need to be done once for this project
+4. Run `npm run package` in the terminal
    - This should generate a .vsix file, named `warmer-pale-fire-X.X.X.vsix` (where X.X.X is the project's version)
-4. Run `code --install-extension warmer-pale-fire-X.X.X.vsix` to add the extension to Vs Code
-5. The themes should now be added to Vs Code, and can be selected under color themes
+5. Run `code --install-extension warmer-pale-fire-X.X.X.vsix` to add the extension to Vs Code
+6. The themes should now be added to Vs Code, and can be selected under color themes
 
 ## License
 
